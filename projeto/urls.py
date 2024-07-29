@@ -15,8 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', include('recipes.urls')) # '' -> indica '/' É a Home do app
+] #indicar o caminho de onde o include vai buscar as urls.No caso, recipes é a pasta e urls é o aquivo urls.py
