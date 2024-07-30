@@ -3,7 +3,9 @@
 #E todas essas URLs estão sendo importadas a partir daqui lá para a pasta de entrada projeto/urls.py usando `path('', include('recipes.urls'))`, da lista de urlpatterns[].
 
 from django.urls import path
-from recipes.views import home # importa do app recipes funções que renderizam as páginas
+
+from recipes.views import \
+    home  # importa do app recipes funções que renderizam as páginas
 
 urlpatterns = [
     path('', home), # importa de recipes/views a função home e o que retorna dela.
