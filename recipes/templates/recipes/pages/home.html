@@ -1,15 +1,14 @@
 {% include "recipes/partials/head.html" %} <!--está importando o <head> de partials. É uma forma de componentizar e reutilizar os htmls-->
 
   <body>
-    <header class="main-header-container">
-      <div class="main-header container">
-        <h1>
-          <a class="main-logo" href="/">
-            <i class="fas fa-utensils main-logo-icon"></i>
-            <span class="main-logo-text">Recipes {{ name }}</span>
-          </a>
-        </h1>
+    {% include "recipes/partials/header.html" %} <!--está importando o <header> de partials. É uma forma de componentizar e reutilizar os htmls-->
+    <div class="search-container">
+      <div class="container">
+        <form action="" class="search-form">
+          <input type="search" class="search-input" name="search">
+          <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
       </div>
-    </header>
+    </div>
   </body>
 </html>
