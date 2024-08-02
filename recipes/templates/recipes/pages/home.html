@@ -2,13 +2,6 @@
 
   <body>
     {% include "recipes/partials/header.html" %} <!--está importando o <header> de partials. É uma forma de componentizar e reutilizar os htmls-->
-    <div class="search-container">
-      <div class="container">
-        <form action="" class="search-form">
-          <input type="search" class="search-input" name="search">
-          <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-        </form>
-      </div>
-    </div>
+    {% include "recipes/partials/search.html"%}<!--está importando o <search> de partials. É uma forma de componentizar e reutilizar os htmls-->
   </body>
 </html>
